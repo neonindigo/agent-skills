@@ -11,17 +11,32 @@ A collection of AI agent skills for use with GitHub Copilot, Claude, and other L
 
 ## Usage
 
+### Install with npx (recommended)
+
+```bash
+# Install a skill globally (available in all projects)
+npx skills add neonindigo/agent-skills --skill <skill-name> -g
+
+# Install into the current project only
+npx skills add neonindigo/agent-skills --skill <skill-name>
+
+# Browse all available skills before installing
+npx skills add neonindigo/agent-skills --list
+```
+
+### Install manually
+
 Copy a skill folder into your agent's skills directory:
 
 ```bash
-# Example: install into your project
-cp -r swift-protocol-witness/ .agents/skills/swift-protocol-witness/
+# Project-local
+cp -r <skill-name>/ .agents/skills/<skill-name>/
 
-# Or into your global skills directory
-cp -r swift-protocol-witness/ ~/.agents/skills/swift-protocol-witness/
+# Global
+cp -r <skill-name>/ ~/.agents/skills/<skill-name>/
 ```
 
-Each skill is self-contained with a `SKILL.md` (agent instructions) and optional `references/` for supporting material.
+Each skill is self-contained with a `SKILL.md` (agent instructions) and optional supporting files.
 
 ## Adding New Skills
 
