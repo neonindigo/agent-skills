@@ -6,6 +6,7 @@ A collection of AI agent skills for use with GitHub Copilot, Claude, and other L
 
 | Skill | Description |
 |-------|-------------|
+| [compose-icon](./compose-icon/) | Full-pipeline guide for creating Liquid Glass app icons with Apple's Icon Composer — design, export, import, tune glass, appearance review, and Xcode delivery. Includes an SVG prep script that validates and splits layers ready for import. |
 | [swift-protocol-witness](./swift-protocol-witness/) | Design and generate Swift protocol witness structs — struct-based alternatives to protocols using closure properties. |
 
 ## Usage
