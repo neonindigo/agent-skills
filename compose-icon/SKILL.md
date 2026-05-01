@@ -40,6 +40,18 @@ Ask the user which stage they're at, then guide from there:
 - Separate colors and shapes that you'll want to control independently in Icon Composer
 - **Leave for Icon Composer:** blurs, shadows, specular highlights, opacity, translucency, background fills/gradients
 
+## SVG prep script
+
+If the user provides an SVG, run the prep script before they import into Icon Composer:
+
+```bash
+bash compose-icon/scripts/prepare-svg.sh your-icon.svg ./icon-layers
+```
+
+It validates the file (canvas size, text-to-outlines, filters, masks) and splits top-level `<g>` layers into numbered SVG files ready to drag into Icon Composer. Requires `xmllint` (built into macOS).
+
+---
+
 ## Stage B — Exporting
 
 - Export as **SVG** whenever possible (best scalability)
