@@ -1,0 +1,45 @@
+{
+  "skill_name": "compose-icon",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm redesigning the icon for my iOS app. It has a colored background and a single graphic mark on top — pretty simple. I want to use Icon Composer to make it look great in dark mode and with the tinted appearance. Where do I start and what should I be thinking about as I set up my layers?",
+      "expected_output": "A clear walkthrough covering: canvas size (1024x1024), layer strategy (background separate from foreground, defer blur/shadow to Icon Composer), export format advice (SVG preferred), what to set in Icon Composer (background colour, group setup, appearance variants for dark and mono), and a note about what to check for mono/tinted specifically.",
+      "files": [],
+      "assertions": [
+        "Mentions 1024×1024 (or 1024px) as the correct canvas size for iOS",
+        "Advises separating the background from the foreground as distinct layers",
+        "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)",
+        "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)",
+        "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm using Figma to design my app icon and I'm ready to export layers for Icon Composer. My icon has a gradient background, a main shape, and a text label. Can you give me a specific export checklist and layer naming scheme I should follow?",
+      "expected_output": "A concrete export checklist (don't export the mask, don't export the background gradient, convert text to outlines, use SVG for vectors, export at canvas size, number layers front-to-back) AND a specific numbered layer naming scheme for their exact setup (e.g., 02-main-shape.svg, 03-text.svg, with a note that the gradient background gets set directly in Icon Composer).",
+      "files": [],
+      "assertions": [
+        "Provides a numbered layer naming scheme specific to the user's icon (gradient background, main shape, text label)",
+        "States that the gradient background should NOT be exported — it should be set directly in Icon Composer",
+        "States the canvas mask (rounded rectangle) should NOT be exported",
+        "Mentions converting the text layer to outlines before exporting (because SVG doesn't preserve fonts)",
+        "Recommends SVG format for vector shapes (the main shape and text outlines)",
+        "Includes a structured export checklist (a list of checkboxes or enumerated steps)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My app icon looks great in default mode but I'm having trouble with dark mode — my bright orange element basically disappears against the dark background. Also, in tinted mode everything just looks like a grey blob. How do I fix both of these in Icon Composer?",
+      "expected_output": "For dark mode: explain adding a fill variant for the Dark appearance on that layer (selecting Dark in canvas, clicking + next to Fill, choosing Vary for Dark, picking a dark-optimised orange). For mono/tinted: explain setting a white or near-white fill for the most prominent element in Mono mode, and mapping other elements to different grey tones for contrast hierarchy. Should also mention the Mono Options dialog for previewing with actual tint colours.",
+      "files": [],
+      "assertions": [
+        "Explains how to add a per-appearance Fill variant for the Dark mode in Icon Composer (e.g., selecting Dark in canvas, using Vary for Dark or equivalent per-appearance control)",
+        "Suggests a specific colour strategy for the orange in dark mode (e.g., use a brighter or more visible version of orange, or a different colour that reads on dark)",
+        "Explains that the primary/most recognisable element should be set to white in Mono mode",
+        "Explains mapping secondary elements to distinct grey tones (not all the same grey) for contrast hierarchy in mono",
+        "Mentions the Mono Options dialog (or equivalent) for previewing tint colours"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "query": "I dragged all my SVG layers into Icon Composer and they all landed in one group. How do I split them into separate groups for better glass control?",
+    "should_trigger": true
+  },
+  {
+    "id": 2,
+    "query": "my app icon looks great on iPhone but on Mac the specular highlight seems way too intense — can i dial it back just for macOS without affecting the iOS version?",
+    "should_trigger": true
+  },
+  {
+    "id": 3,
+    "query": "I'm setting up my Figma artboard for a new iOS app icon. Should I use 1024x1024 or something else? I want to make sure it works with Icon Composer",
+    "should_trigger": true
+  },
+  {
+    "id": 4,
+    "query": "what's the difference between Individual and Combined mode in Icon Composer? I have 3 layers in a group and can't figure out which one to use",
+    "should_trigger": true
+  },
+  {
+    "id": 5,
+    "query": "my beta testers on older iOS versions are saying my icon looks wrong after I switched to the .icon file format. do I need to do anything special for backwards compatibility?",
+    "should_trigger": true
+  },
+  {
+    "id": 6,
+    "query": "In Icon Composer the gradient background I set is automatically going grey when I switch to dark mode preview. How do I set a custom dark background colour instead of letting it auto-convert?",
+    "should_trigger": true
+  },
+  {
+    "id": 7,
+    "query": "I have an Illustrator file with 4 separate layers for my app icon artwork. What's the best workflow for getting these into Icon Composer — do I export them all as SVG?",
+    "should_trigger": true
+  },
+  {
+    "id": 8,
+    "query": "the glass effect on the narrow parts of my icon letterform looks really puffy and weird, like it's been over-inflated. how do i fix that in icon composer",
+    "should_trigger": true
+  },
+  {
+    "id": 9,
+    "query": "Building an app for both iPhone and Apple Watch. Do I need separate .icon files for each platform, or can a single Icon Composer file handle both from one file?",
+    "should_trigger": true
+  },
+  {
+    "id": 10,
+    "query": "my icon looks perfect in default and dark but in mono/tinted mode every layer is the exact same shade of grey and you can't tell them apart at all",
+    "should_trigger": true
+  },
+  {
+    "id": 11,
+    "query": "I want to add a widget to my iOS app and need to configure the widget's icon and accent color in Xcode. Where do I set that up?",
+    "should_trigger": false
+  },
+  {
+    "id": 12,
+    "query": "How do I create custom SF Symbols for my app that stylistically match the look of my app icon?",
+    "should_trigger": false
+  },
+  {
+    "id": 13,
+    "query": "My tvOS app uses parallax layers in the AppIcon asset catalog. I currently have 3 layers and want to add a 4th — how do I do that in Xcode?",
+    "should_trigger": false
+  },
+  {
+    "id": 14,
+    "query": "I need to add dark mode versions of my tab bar icons and toolbar buttons throughout my app. What's the recommended approach in SwiftUI?",
+    "should_trigger": false
+  },
+  {
+    "id": 15,
+    "query": "I want to put my app icon on our marketing website and press kit. What sizes and formats should I export for web and print use?",
+    "should_trigger": false
+  },
+  {
+    "id": 16,
+    "query": "How do I implement alternate app icons in my iOS app so users can switch between a light and dark version of the icon from within the app settings screen?",
+    "should_trigger": false
+  },
+  {
+    "id": 17,
+    "query": "I'm setting up my visionOS app target in Xcode and need to configure the app icon for the Vision Pro home space. The asset catalog approach seems different — how does it work?",
+    "should_trigger": false
+  },
+  {
+    "id": 18,
+    "query": "just got a Mac and want to replace some of the default app icons with custom ones I found online — is there an easy tool to do that on macOS?",
+    "should_trigger": false
+  },
+  {
+    "id": 19,
+    "query": "I have some complex SVG layers with gradients that Figma can't export cleanly. Should I just use PNG for those specific layers instead of SVG?",
+    "should_trigger": true
+  },
+  {
+    "id": 20,
+    "query": "after dragging my AppIcon.icon file into Xcode the old AppIcon asset catalog is still showing in the project navigator. will they conflict? which one does Xcode use?",
+    "should_trigger": true
+  }
+]

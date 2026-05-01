@@ -1,0 +1,333 @@
+{
+  "metadata": {
+    "skill_name": "compose-icon",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "<model-name>",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-05-01T14:46:19Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 3
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 54.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions 1024\u00d71024 (or 1024px) as the correct canvas size for iOS",
+          "passed": true,
+          "evidence": "response.md: 'Set up your design at 1024 \u00d7 1024 px'"
+        },
+        {
+          "text": "Advises separating the background from the foreground as distinct layers",
+          "passed": true,
+          "evidence": "response.md: 'Your background and your graphic mark each become their own layer'"
+        },
+        {
+          "text": "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)",
+          "passed": true,
+          "evidence": "response.md: 'Don't bake in blur, shadows, glows, or translucency \u2014 those are Liquid Glass properties you control in Icon Composer'"
+        },
+        {
+          "text": "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)",
+          "passed": true,
+          "evidence": "response.md covers per-appearance fill variants in the Dark mode section"
+        },
+        {
+          "text": "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)",
+          "passed": true,
+          "evidence": "response.md: Mono section explains setting primary element to white and contrast hierarchy"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 33.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Provides a numbered layer naming scheme specific to the user's icon (gradient background, main shape, text label)",
+          "passed": true,
+          "evidence": "response.md: '01-background', '02-main-shape', '03-text-label' with descriptions"
+        },
+        {
+          "text": "States that the gradient background should NOT be exported \u2014 it should be set directly in Icon Composer",
+          "passed": true,
+          "evidence": "response.md: 'Your gradient background is the one element you skip exporting entirely \u2014 just recreate it as a background gradient in Icon Composer's Inspector'"
+        },
+        {
+          "text": "States the canvas mask (rounded rectangle) should NOT be exported",
+          "passed": true,
+          "evidence": "response.md checklist: 'Do not export the rounded-rect mask \u2014 the system applies it automatically'"
+        },
+        {
+          "text": "Mentions converting the text layer to outlines before exporting (because SVG doesn't preserve fonts)",
+          "passed": true,
+          "evidence": "response.md: '03-text-label \u2190 your text \u2014 convert to outlines first \u2192 export as SVG'"
+        },
+        {
+          "text": "Recommends SVG format for vector shapes (the main shape and text outlines)",
+          "passed": true,
+          "evidence": "response.md recommends SVG for main-shape and text-label (after outline conversion)"
+        },
+        {
+          "text": "Includes a structured export checklist (a list of checkboxes or enumerated steps)",
+          "passed": true,
+          "evidence": "response.md contains a full markdown checklist with [ ] checkboxes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "time_seconds": 49.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Explains how to add a per-appearance Fill variant for the Dark mode in Icon Composer (e.g., selecting Dark in canvas, using Vary for Dark or equivalent per-appearance control)",
+          "passed": true,
+          "evidence": "response.md: 'click it and choose Vary for Dark' with detailed step-by-step including selecting Dark in canvas and using \u2295 icon next to Fill"
+        },
+        {
+          "text": "Suggests a specific colour strategy for the orange in dark mode (e.g., use a brighter or more visible version of orange, or a different colour that reads on dark)",
+          "passed": true,
+          "evidence": "response.md table shows 'lighter/shifted orange' for dark variant"
+        },
+        {
+          "text": "Explains that the primary/most recognisable element should be set to white in Mono mode",
+          "passed": true,
+          "evidence": "response.md: 'your primary foreground element must be white so it reads strongly over any tint colour'"
+        },
+        {
+          "text": "Explains mapping secondary elements to distinct grey tones (not all the same grey) for contrast hierarchy in mono",
+          "passed": true,
+          "evidence": "response.md: 'For secondary elements: set them to 50\u201370% grey so they're visible but clearly subordinate. Make sure not everything ends up at the same grey value'"
+        },
+        {
+          "text": "Mentions the Mono Options dialog (or equivalent) for previewing tint colours",
+          "passed": true,
+          "evidence": "response.md: 'With Mono selected, click Options (it appears near the appearance selector)'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 62.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Mentions 1024\u00d71024 (or 1024px) as the correct canvas size for iOS",
+          "passed": false,
+          "evidence": "response.md does not mention 1024\u00d71024 canvas size anywhere"
+        },
+        {
+          "text": "Advises separating the background from the foreground as distinct layers",
+          "passed": true,
+          "evidence": "response.md: 'Background layer \u2014 the solid colored fill behind everything' and 'Foreground layer \u2014 your graphic mark'"
+        },
+        {
+          "text": "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)",
+          "passed": false,
+          "evidence": "response.md does not mention deferring effects or keeping source art flat/opaque"
+        },
+        {
+          "text": "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)",
+          "passed": true,
+          "evidence": "response.md covers Dark tab and mentions adjusting foreground appearance for dark, though describes workflow inaccurately (wrong Xcode version, wrong launch method)"
+        },
+        {
+          "text": "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)",
+          "passed": true,
+          "evidence": "response.md mentions 'Foreground mark: Often lightened or made white/near-white' in Tinted section"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.5,
+        "passed": 3,
+        "failed": 3,
+        "total": 6,
+        "time_seconds": 40.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Provides a numbered layer naming scheme specific to the user's icon (gradient background, main shape, text label)",
+          "passed": true,
+          "evidence": "response.md provides naming scheme though less targeted to the user's specific three layers"
+        },
+        {
+          "text": "States that the gradient background should NOT be exported \u2014 it should be set directly in Icon Composer",
+          "passed": false,
+          "evidence": "response.md advises exporting the gradient background (discusses gradient angles/stops for export), never mentions setting it in Icon Composer instead"
+        },
+        {
+          "text": "States the canvas mask (rounded rectangle) should NOT be exported",
+          "passed": false,
+          "evidence": "response.md mentions 'clipping masks' only in context of hidden layers, not the icon shape mask that must be omitted"
+        },
+        {
+          "text": "Mentions converting the text layer to outlines before exporting (because SVG doesn't preserve fonts)",
+          "passed": true,
+          "evidence": "response.md: 'Text is outlined to vector (Right-click \u2192 Outline Stroke, or use Flatten)'"
+        },
+        {
+          "text": "Recommends SVG format for vector shapes (the main shape and text outlines)",
+          "passed": false,
+          "evidence": "response.md does not mention SVG at all; implies PNG export"
+        },
+        {
+          "text": "Includes a structured export checklist (a list of checkboxes or enumerated steps)",
+          "passed": true,
+          "evidence": "response.md contains a markdown checklist with [ ] checkboxes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.6,
+        "passed": 3,
+        "failed": 2,
+        "total": 5,
+        "time_seconds": 46.0,
+        "tokens": 0,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "Explains how to add a per-appearance Fill variant for the Dark mode in Icon Composer (e.g., selecting Dark in canvas, using Vary for Dark or equivalent per-appearance control)",
+          "passed": false,
+          "evidence": "response.md does not mention 'Vary for Dark' or per-appearance fill variants; instead suggests adding strokes/glows and mid-tone background layers as generic image editing fixes"
+        },
+        {
+          "text": "Suggests a specific colour strategy for the orange in dark mode (e.g., use a brighter or more visible version of orange, or a different colour that reads on dark)",
+          "passed": true,
+          "evidence": "response.md: 'Aim for your orange to sit at L 55\u201370% in the dark variant' \u2014 a colour strategy is given, though via HSL luminance rather than Icon Composer fill controls"
+        },
+        {
+          "text": "Explains that the primary/most recognisable element should be set to white in Mono mode",
+          "passed": false,
+          "evidence": "response.md does not mention setting the primary element to white in Mono mode"
+        },
+        {
+          "text": "Explains mapping secondary elements to distinct grey tones (not all the same grey) for contrast hierarchy in mono",
+          "passed": true,
+          "evidence": "response.md: 'If all your layers are at similar luminance values, they flatten into an undifferentiated mass' \u2014 the concept is there, though without specific grey values or Icon Composer controls"
+        },
+        {
+          "text": "Mentions the Mono Options dialog (or equivalent) for previewing tint colours",
+          "passed": true,
+          "evidence": "response.md: 'Click the Tinted tab while editing. This shows exactly what the monochromatic render will look like' \u2014 approximate equivalent"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 45.3333,
+        "stddev": 10.9697,
+        "min": 33.0,
+        "max": 54.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.5667,
+        "stddev": 0.0577,
+        "min": 0.5,
+        "max": 0.6
+      },
+      "time_seconds": {
+        "mean": 49.3333,
+        "stddev": 11.3725,
+        "min": 40.0,
+        "max": 62.0
+      },
+      "tokens": {
+        "mean": 0.0,
+        "stddev": 0.0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.43",
+      "time_seconds": "-4.0",
+      "tokens": "+0"
+    }
+  },
+  "notes": []
+}

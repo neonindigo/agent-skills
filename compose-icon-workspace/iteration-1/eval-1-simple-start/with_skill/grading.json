@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Mentions 1024×1024 (or 1024px) as the correct canvas size for iOS", "passed": true, "evidence": "response.md: 'Set up your design at 1024 × 1024 px'"},
+    {"text": "Advises separating the background from the foreground as distinct layers", "passed": true, "evidence": "response.md: 'Your background and your graphic mark each become their own layer'"},
+    {"text": "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)", "passed": true, "evidence": "response.md: 'Don't bake in blur, shadows, glows, or translucency — those are Liquid Glass properties you control in Icon Composer'"},
+    {"text": "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)", "passed": true, "evidence": "response.md covers per-appearance fill variants in the Dark mode section"},
+    {"text": "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)", "passed": true, "evidence": "response.md: Mono section explains setting primary element to white and contrast hierarchy"}
+  ],
+  "summary": {"passed": 5, "failed": 0, "total": 5, "pass_rate": 1.0}
+}

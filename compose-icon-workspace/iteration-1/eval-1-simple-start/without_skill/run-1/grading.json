@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Mentions 1024×1024 (or 1024px) as the correct canvas size for iOS", "passed": false, "evidence": "response.md does not mention 1024×1024 canvas size anywhere"},
+    {"text": "Advises separating the background from the foreground as distinct layers", "passed": true, "evidence": "response.md: 'Background layer — the solid colored fill behind everything' and 'Foreground layer — your graphic mark'"},
+    {"text": "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)", "passed": false, "evidence": "response.md does not mention deferring effects or keeping source art flat/opaque"},
+    {"text": "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)", "passed": true, "evidence": "response.md covers Dark tab and mentions adjusting foreground appearance for dark, though describes workflow inaccurately (wrong Xcode version, wrong launch method)"},
+    {"text": "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)", "passed": true, "evidence": "response.md mentions 'Foreground mark: Often lightened or made white/near-white' in Tinted section"}
+  ],
+  "summary": {"passed": 3, "failed": 2, "total": 5, "pass_rate": 0.6}
+}

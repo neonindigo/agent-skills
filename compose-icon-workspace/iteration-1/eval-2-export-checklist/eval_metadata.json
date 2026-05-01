@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "export-checklist",
+  "prompt": "I'm using Figma to design my app icon and I'm ready to export layers for Icon Composer. My icon has a gradient background, a main shape, and a text label. Can you give me a specific export checklist and layer naming scheme I should follow?",
+  "assertions": [
+    "Provides a numbered layer naming scheme specific to the user's icon (gradient background, main shape, text label)",
+    "States that the gradient background should NOT be exported — it should be set directly in Icon Composer",
+    "States the canvas mask (rounded rectangle) should NOT be exported",
+    "Mentions converting the text layer to outlines before exporting (because SVG doesn't preserve fonts)",
+    "Recommends SVG format for vector shapes (the main shape and text outlines)",
+    "Includes a structured export checklist (a list of checkboxes or enumerated steps)"
+  ]
+}

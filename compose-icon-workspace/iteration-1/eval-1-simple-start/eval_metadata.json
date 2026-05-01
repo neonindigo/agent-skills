@@ -1,0 +1,12 @@
+{
+  "eval_id": 1,
+  "eval_name": "simple-start",
+  "prompt": "I'm redesigning the icon for my iOS app. It has a colored background and a single graphic mark on top — pretty simple. I want to use Icon Composer to make it look great in dark mode and with the tinted appearance. Where do I start and what should I be thinking about as I set up my layers?",
+  "assertions": [
+    "Mentions 1024×1024 (or 1024px) as the correct canvas size for iOS",
+    "Advises separating the background from the foreground as distinct layers",
+    "Mentions deferring blur, shadow, or specular effects to Icon Composer (not baking them into source artwork)",
+    "Explains how to customise the icon for dark mode in Icon Composer (e.g., fill variants, per-appearance settings)",
+    "Mentions the Mono appearance and what to consider for tinted mode (e.g., setting primary element to white, contrast hierarchy)"
+  ]
+}

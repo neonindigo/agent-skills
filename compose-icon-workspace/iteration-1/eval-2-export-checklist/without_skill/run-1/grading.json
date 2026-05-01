@@ -1,0 +1,11 @@
+{
+  "expectations": [
+    {"text": "Provides a numbered layer naming scheme specific to the user's icon (gradient background, main shape, text label)", "passed": true, "evidence": "response.md provides naming scheme though less targeted to the user's specific three layers"},
+    {"text": "States that the gradient background should NOT be exported — it should be set directly in Icon Composer", "passed": false, "evidence": "response.md advises exporting the gradient background (discusses gradient angles/stops for export), never mentions setting it in Icon Composer instead"},
+    {"text": "States the canvas mask (rounded rectangle) should NOT be exported", "passed": false, "evidence": "response.md mentions 'clipping masks' only in context of hidden layers, not the icon shape mask that must be omitted"},
+    {"text": "Mentions converting the text layer to outlines before exporting (because SVG doesn't preserve fonts)", "passed": true, "evidence": "response.md: 'Text is outlined to vector (Right-click → Outline Stroke, or use Flatten)'"},
+    {"text": "Recommends SVG format for vector shapes (the main shape and text outlines)", "passed": false, "evidence": "response.md does not mention SVG at all; implies PNG export"},
+    {"text": "Includes a structured export checklist (a list of checkboxes or enumerated steps)", "passed": true, "evidence": "response.md contains a markdown checklist with [ ] checkboxes"}
+  ],
+  "summary": {"passed": 3, "failed": 3, "total": 6, "pass_rate": 0.5}
+}

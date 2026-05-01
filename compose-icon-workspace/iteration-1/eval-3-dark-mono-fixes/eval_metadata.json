@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "dark-mono-fixes",
+  "prompt": "My app icon looks great in default mode but I'm having trouble with dark mode — my bright orange element basically disappears against the dark background. Also, in tinted mode everything just looks like a grey blob. How do I fix both of these in Icon Composer?",
+  "assertions": [
+    "Explains how to add a per-appearance Fill variant for the Dark mode in Icon Composer (e.g., selecting Dark in canvas, using Vary for Dark or equivalent per-appearance control)",
+    "Suggests a specific colour strategy for the orange in dark mode (e.g., use a brighter or more visible version of orange, or a different colour that reads on dark)",
+    "Explains that the primary/most recognisable element should be set to white in Mono mode",
+    "Explains mapping secondary elements to distinct grey tones (not all the same grey) for contrast hierarchy in mono",
+    "Mentions the Mono Options dialog (or equivalent) for previewing tint colours"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "expectations": [
+    {"text": "Explains how to add a per-appearance Fill variant for the Dark mode in Icon Composer (e.g., selecting Dark in canvas, using Vary for Dark or equivalent per-appearance control)", "passed": false, "evidence": "response.md does not mention 'Vary for Dark' or per-appearance fill variants; instead suggests adding strokes/glows and mid-tone background layers as generic image editing fixes"},
+    {"text": "Suggests a specific colour strategy for the orange in dark mode (e.g., use a brighter or more visible version of orange, or a different colour that reads on dark)", "passed": true, "evidence": "response.md: 'Aim for your orange to sit at L 55–70% in the dark variant' — a colour strategy is given, though via HSL luminance rather than Icon Composer fill controls"},
+    {"text": "Explains that the primary/most recognisable element should be set to white in Mono mode", "passed": false, "evidence": "response.md does not mention setting the primary element to white in Mono mode"},
+    {"text": "Explains mapping secondary elements to distinct grey tones (not all the same grey) for contrast hierarchy in mono", "passed": true, "evidence": "response.md: 'If all your layers are at similar luminance values, they flatten into an undifferentiated mass' — the concept is there, though without specific grey values or Icon Composer controls"},
+    {"text": "Mentions the Mono Options dialog (or equivalent) for previewing tint colours", "passed": true, "evidence": "response.md: 'Click the Tinted tab while editing. This shows exactly what the monochromatic render will look like' — approximate equivalent"}
+  ],
+  "summary": {"passed": 3, "failed": 2, "total": 5, "pass_rate": 0.6}
+}
